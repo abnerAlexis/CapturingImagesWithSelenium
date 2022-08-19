@@ -11,6 +11,7 @@ import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
@@ -21,10 +22,8 @@ public class CapturingImagesWithSelenium {
         driver.manage().window().maximize();
 //        getAscreenshot((TakesScreenshot) driver);
 //        screenShotWithAShot(driver);
-
         WebElement imageElement = driver.findElement(By.cssSelector(".bot_column"));
 //        captureImgElement(imageElement);
-        driver.close();
     }
 
     //This method captures one single element in a page
